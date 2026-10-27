@@ -1,0 +1,20 @@
+# ESP32 credentials and PlatformIO outputs
+firmware/include/config.h
+**/.pio/
+**/.vscode/
+# Python / local AI files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+*.onnx
+voices-*.bin
+vosk-model*/
+*.zip
+backend/*_reply.wav
+backend/last_question.wav
+backend/*.pcm
+backend/*.wav
+*.log
+.DS_Store
