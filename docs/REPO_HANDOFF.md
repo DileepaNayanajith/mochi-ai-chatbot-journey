@@ -1,6 +1,6 @@
 # Publishing this repo to GitHub
 
-The ZIP contains a complete local Git repository including the `.git` directory and reconstructed incremental history. It is **not yet pushed to GitHub**.
+The ZIP contains a complete local Git repository including the `.git` directory and reconstructed incremental history. Its 35 supplied milestone commits are preserved in the published repository at https://github.com/DileepaNayanajith/mochi-ai-chatbot-journey. The steps below describe publishing a separate copy.
 
 ```bash
 unzip mochi-ai-chatbot-journey-git-history.zip

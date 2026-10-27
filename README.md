@@ -1,14 +1,14 @@
 # Mochi AI Chatbot Journey 🤖
 
-**An ESP32-S3 AI companion built on a breadboard — from first display pixels to an English-speaking local assistant.**
+**My ESP32-S3 AI companion, from the first display test to a local English voice assistant.**
 
-Built by **Dileepa Nayanajith** for **PRINTPRO3D**, with an ESP32-S3, INMP441 microphone, MAX98357A I²S amplifier, speaker and a GMT130-V1.0 / ST7789 240×240 IPS display. The robot listens when its GPIO7 button is held, sends 16 kHz audio over Wi-Fi to a MacBook, and answers through its own speaker.
+I built Mochi for **PRINTPRO3D** with an ESP32-S3, INMP441 microphone, MAX98357A I²S amplifier, speaker and a GMT130-V1.0 / ST7789 240×240 IPS display. The project uses a GPIO7 push-to-talk button to send 16 kHz audio over Wi-Fi to a MacBook and play the answer through its own speaker.
 
 ![Real Mochi hardware with display and speaker](media/photos/mochi-breadboard-with-speaker.png)
 
 ![Real 240x240 display close-up](media/photos/esp32-s3-tft-closeup.jpg)
 
-## What works today (verified on the owner's original prototype)
+## Prototype milestones reported in the project notes
 
 - [x] ST7789 240×240 IPS face, rotated 180°, SPI mode 3
 - [x] Green rounded-eye face, blink/status display
@@ -54,3 +54,9 @@ This archive contains a real `.git` folder with **incremental, meaningful commit
 ## Project status and responsible release
 
 Prototype, English-first. Sinhala Whisper was explored but small-model Sinhala conversation looped, prompting this English implementation. A wake word, live web facts and actual smart-home/music actions are **future work**, not current features. The local HTTP server is for a trusted LAN, not a public deployment. The **original project code** uses the MIT license; every pretrained model and library retains its own terms. See [LICENSING](docs/LICENSING.md), [SECURITY](docs/SECURITY.md) and [ROADMAP](docs/ROADMAP.md).
+
+## Publication checks
+
+Published under [Dileepa Nayanajith](https://github.com/DileepaNayanajith). The supplied archive includes two hardware photographs and no demo video. No generated or stock project images were added. Photo provenance comes from the supplied project notes.
+
+Python syntax checks and all six dependency-free backend unit tests passed during publication on 28 October 2026. Git history was scanned for common credential signatures; configuration contains placeholders rather than personal Wi-Fi credentials. Full firmware compilation, local AI model integration and physical hardware operation were not revalidated here. The 35 supplied milestone commits were preserved; they document a retrospective reconstruction, as described above.
