@@ -1,0 +1,17 @@
+name: Backend checks
+on:
+  push:
+  pull_request:
+jobs:
+  basic-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check Python syntax
+        run: |
+          python -m py_compile backend/mochi_server.py backend/mochi_settings.py backend/voice_core.py backend/mochi_stt.py backend/mochi_brain.py backend/mochi_tts.py backend/scripts/check_server.py backend/scripts/test_previous_recording.py experiments/wake-word/test_recording.py
+      - name: Run dependency-free unit tests
+        run: cd backend && python -m unittest discover -s tests -v
